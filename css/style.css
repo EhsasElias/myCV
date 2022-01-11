@@ -201,6 +201,11 @@ color: #64ce74;
     padding: 3px;
     border-radius: 2px;
 }
+.myServices{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .myServices .fa{
     border: none;
     height: 60px;
@@ -231,9 +236,10 @@ b{
 display: block;
 }
 .Resume{
-    width: 95vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
@@ -256,9 +262,14 @@ display: block;
     color: #64ce74;
     font-size: 20px;
 }
+.exDiv{
+    width: 100%;
+}
 .exper{
+    width: 100%;
     padding: 25px;
 }
+
 .expertdate{
     padding: 1px 3px;
     margin: 10px;
@@ -269,6 +280,26 @@ display: block;
     border-radius: 3px;
 }
 .explace{
+    color: rgb(105, 102, 102);
+}
+.eduDiv{
+    width: 100%;
+}
+.edu{
+    width: 100%;
+    padding: 25px;
+}
+
+.edudate{
+    padding: 1px 3px;
+    margin: 10px;
+    font-size: 15px;
+    display: inline-block;
+    border: 1px solid #64ce74;
+    color: #64ce74;
+    border-radius: 3px;
+}
+.edplace{
     color: rgb(105, 102, 102);
 }
 .skills{
@@ -373,4 +404,7 @@ width: 100%;
     margin: 5px;
     background-color: #fff;
     border: 1px solid #64ce74;
+}
+#pics p ,#ved video{
+    margin:5px;
 }
