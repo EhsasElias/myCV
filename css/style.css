@@ -20,7 +20,7 @@ nav{
     
 }
 nav ul{
-    with: 95%;
+    width:  95%;
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
@@ -44,7 +44,7 @@ nav ul a li div{
     flex-wrap: wrap;
 }
 nav ul a li div p{
-    with: 95%;
+    width:  95%;
 }
 nav ul a li{
     padding:5px;
@@ -97,11 +97,25 @@ nav a:hover{
     font-size: 34px;
     color: #323232;
 }
-.subtitle{
+.subtitle span{
     color: #64ce74;
-    
-
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
+
+@keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 100%;
+    }
+  
+    to {
+      margin-right: 50%;
+      width: 100%;
+    }
+  }
 .buts{
     display: flex;
     justify-content: center;
@@ -221,7 +235,7 @@ b{
 }
 .seviceChild{
     margin: auto;
-    with: 95%;
+    width:  95%;
     padding: 25px;
     text-align: center;
     border-bottom: 1px solid #ccd5dd;
@@ -236,7 +250,7 @@ b{
 display: block;
 }
 .Resume{
-    with: 95%;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -247,13 +261,13 @@ display: block;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;  
 }
 .Resume h4{
-    with: 95%;
+    width:  95%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px 20px;
     border-bottom: 1px solid #ccd5dd;
 }
 .Resume h5{
-    with: 95%;
+    width:  95%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px 20px;
     border-bottom: 1px solid #ccd5dd;
@@ -263,10 +277,10 @@ display: block;
     font-size: 20px;
 }
 .exDiv{
-    with: 95%;
+    width:  95%;
 }
 .exper{
-    with: 95%;
+    width:  95%;
     padding: 25px;
 }
 
@@ -283,10 +297,10 @@ display: block;
     color: rgb(105, 102, 102);
 }
 .eduDiv{
-    with: 95%;
+    width:  95%;
 }
 .edu{
-    with: 95%;
+    width:  95%;
     padding: 25px;
 }
 
@@ -303,7 +317,7 @@ display: block;
     color: rgb(105, 102, 102);
 }
 .skills{
-with: 95%;
+width:  95%;
 
 }
 .skillsdetails span{
@@ -326,7 +340,7 @@ with: 95%;
  
 }
 .myWorks div{
-    with: 95%;
+    width:  95%;
 }
 .myWorks h4{
     
@@ -350,7 +364,7 @@ with: 95%;
     color: #64ce74;
 }
 #pics ,#ved{
-    with: 95%;
+    width:  95%;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
@@ -367,10 +381,10 @@ with: 95%;
     
 }
 .con div{
-    with: 100%;
+    width:  100%;
 }
 .con h4{
-    with: 95%;
+    width:  95%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 15px 20px;
     border-bottom: 1px solid #ccd5dd;
@@ -408,4 +422,8 @@ with: 95%;
 }
 #pics p ,#ved video{
     margin:5px;
+}
+@media screen and (min-width: 800px)
+{
+
 }
