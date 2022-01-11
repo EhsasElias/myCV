@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #58b690;
+}
+.innerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #3b3b3b;
+    text-align: center;
+    
+}
+nav ul{
+  
+    background-color: #ffffff;
+    list-style: none;
+    border-radius: 5px;
+}
+nav ul a{
+    
+    text-decoration: none;
+    color: #3b3b3b;
+   
+}
+nav ul a li div{
+    padding-bottom: 10px;
+    border-bottom:1px solid #ccd5dd;
+}
+nav ul a li{
+    padding:8px 5px;
+    
+}
+
+nav .fa {
+    padding: 5px;
+    font-weight: 800;
+    font-size: 18px;
+}
+nav a:hover{
+    color: #64ce74;
+}
+.last div{
+    border-bottom: none;
+}
+.pinfo{
+    width: 450px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mypic img{
+ width: 100%;
+ height: 400px;
+ border-radius: 5px;
+ border-radius: 4px 4px 0 0
+}
+.title{
+    margin-top: 15px;
+    font-size: 34px;
+    color: #323232;
+}
+.subtitle{
+    color: #64ce74;
+    
+
+}
+.buts{
+    display: flex;
+    justify-content: center;
+}
+.buts button{
+    background-color: #ffffff;
+    border: 0;
+    font-weight: 500;
+    font-size: 14px;
+    border-top: 1px solid #ccd5dd;
+    padding: 15px;
+    margin: 8px;
+    width: 200px;
+}
+.buts button:first-child{
+    border-right: 0.5px solid #ccd5dd;
+    margin-right: 0;
+}
+.buts button:last-child{
+    border-left: 0.5px solid #ccd5dd;
+    margin-left: 0;
+}
+.buts button:hover{
+    color: #64ce74;
+    border-color: #64ce74;
+}
+.layer1 ,.layer2{
+    width: 50%;
+}
+.account{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.account a{
+text-decoration: none;
+font-size: 15px;
+color: #3b3b3b;
+padding: 8px;
+}
+.account a:hover{
+color: #64ce74;
+}
