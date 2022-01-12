@@ -420,6 +420,12 @@ width:  95%;
     background-color: #fff;
     border: 1px solid #64ce74;
 }
+.form h5{
+    width:  95%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccd5dd;
+}
 #pics p ,#ved video{
     margin:5px;
 }
