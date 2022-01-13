@@ -129,11 +129,7 @@ function makeFullScreen() {
 
 }
 
-
-
-document.addEventListener('dblclick', function (e) {
-    e.preventDefault();
-
+function darkMode(){
     var element = document.body;
     var element2 = document.querySelector("ul");
     var element3 = document.querySelector("#pinfo");
@@ -152,12 +148,13 @@ document.addEventListener('dblclick', function (e) {
     element7.classList.toggle("dark-mode");
     element8.classList.toggle("dark-mode");
     element9.classList.toggle("dark-mode");
-    
-});
+}
+
+
 
 
 var touchtime = 0;
-document.body.on("click", function() {
+document.addEventListener("click", function() {
     if (touchtime == 0) {
         // set first click
         touchtime = new Date().getTime();
@@ -165,7 +162,8 @@ document.body.on("click", function() {
         // compare first click to this click and see if they occurred within double click threshold
         if (((new Date().getTime()) - touchtime) < 800) {
             // double click occurred
-            alert("double clicked");
+           
+            darkMode();
             touchtime = 0;
         } else {
             // not a double click so set as a new first click
