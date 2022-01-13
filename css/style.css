@@ -13,11 +13,11 @@ font-family: Arial, Helvetica, sans-serif;
 nav{
     font-weight: 500;
     font-size: 10px;
-    color: #3b3b3b;
+    color: inherit;
     text-align: center;
     margin: auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    
+  
 }
 nav ul{
     width:  95%;
@@ -28,12 +28,11 @@ nav ul{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     
-    
 }
 nav ul a{
     
     text-decoration: none;
-    color: #3b3b3b;
+    color: inherit;
    
 }
 nav ul a li div{
@@ -95,7 +94,6 @@ nav a:hover{
 .title{
     margin-top: 15px;
     font-size: 34px;
-    color: #323232;
 }
 .subtitle span{
     color: #64ce74;
@@ -154,7 +152,7 @@ nav a:hover{
 .account a{
 text-decoration: none;
 font-size: 15px;
-color: #3b3b3b;
+color:inherit;
 padding: 8px;
 }
 .account a:hover{
@@ -412,12 +410,16 @@ width:  95%;
 .mesg{
     padding: 20px;
 }
-
+form input{
+    background-color: inherit;
+    color: inherit;
+}
 .con form button{
     width: 100%;
     padding: 10px;
     margin: 5px;
-    background-color: #fff;
+    background-color: inherit;
+    color: inherit;
     border: 1px solid #64ce74;
 }
 .form h5{
@@ -432,7 +434,7 @@ width:  95%;
 .dark-mode{
     background-color: rgb(22, 22, 22) !important;
     color: white !important;
-    border-color: white !important;
+    border:1px solid white !important;
 }
 @media screen and (min-width: 800px)
 {
