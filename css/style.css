@@ -429,6 +429,11 @@ width:  95%;
 #pics p ,#ved video{
     margin:5px;
 }
+.dark-mode{
+    background-color: rgb(22, 22, 22) !important;
+    color: white !important;
+    border-color: white !important;
+}
 @media screen and (min-width: 800px)
 {
 

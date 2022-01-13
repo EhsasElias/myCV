@@ -54,8 +54,8 @@
 
 
             <div class="pinfodiv">
-                <section class="pinfo">
-                    <div class="mypic">
+                <section class="pinfo" id="pinfo">
+                    <div class="mypic" id="theImage">
                         <div class="layer1"></div>
 
                     </div>
@@ -72,9 +72,9 @@
                     </div>
 
                     <div class="buts">
-                        <button>DOWNLOAD CV</button>
+                        <button id="downloadbut">DOWNLOAD CV</button>
 
-                        <button>CONTACT ME</button>
+                        <button id="contactbut">CONTACT ME</button>
                     </div>
                 </section>
             </div>
@@ -264,7 +264,7 @@
                     </div>
                     <div id="all">
                         <div id="pics">
-                           <p><img src="imgs/mob1.jpg" width="320" height="450" alt=""></p> 
+                            <p><img src="imgs/mob1.jpg" width="320" height="450"   alt=""></p>
                             <p><img src="imgs/mob2.jpg" width="320" height="450" alt=""></p>
                             <p><img src="imgs/mob3.jpg" width="320" height="450" alt=""></p>
                             <p><img src="imgs/web1.png" width="320" height="450" alt=""></p>
@@ -299,7 +299,8 @@
                             </p>
                             <p>
                                 <span>Email</span>
-                                <a href="ehsas.1998000@gmail.com">ehsas.1998000@gmail</a>
+                                <a
+                                    href="https://accounts.google.com/SignOutOptions?hl=ar&continue=https://mail.google.com&service=mail">ehsas.1998000@gmail</a>
                             </p>
                             <p>
                                 <span>Phone</span>
@@ -312,11 +313,27 @@
                                     <span class="green">Contact</span> Form
                                 </h5>
                             </div>
-                            <form action="">
-                                <input type="text" placeholder="Full Name" class="name">
-                                <input type="email" placeholder="Email Address" class="email">
-                                <input type="text" placeholder="Your Message" class="mesg">
-                                <button>SEND MESSAGE</button>
+                            <form action="" id="form">
+                                <div>
+                                    <label for="username">User Name</label>
+                                    <input type="text" placeholder="Full Name" id="username" class="name">
+                                    <small id="usermsg"></small>
+                                </div>
+
+                                <div>
+                                    <label for="email">Email</label>
+                                    <input type="text" placeholder="Email Address" id="email" class="email">
+                                    <small id="emailmsg"></small>
+                                </div>
+                                <div>
+                                    <label for="message">Message</label>
+                                    <input type="text" placeholder="Your Message" id="textarea" class="mesg">
+                                    <small id="textmsg"></small>
+                                </div>
+                               <div>
+                                <button id="submit">SEND MESSAGE</button>
+                               </div>
+                                
                             </form>
                         </div>
                     </div>
@@ -332,7 +349,9 @@
                 <a href="https://github.com/EhsasElias" class="fa fa-github"></a>
             </div>
         </footer>
+  
     </div>
+    <script src="js/js.js"></script>
 </body>
 
 </html>
