@@ -409,7 +409,7 @@ video{
     width: 100%;
     margin: 5px;
     border: 1px solid #64ce74;
-    color: #64ce74;
+   
 }
 .name ,.email {
     padding: 10px;
@@ -439,6 +439,10 @@ form input{
 }
 #pics p ,#ved video{
     margin:5px;
+}
+#pics p img{
+    display: block;
+    width: 100%;
 }
 .dark-mode{
     background-color: rgb(22, 22, 22) !important;
