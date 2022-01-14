@@ -95,7 +95,11 @@ nav a:hover{
     margin-top: 15px;
     font-size: 34px;
 }
+.subtitle{
+    display: flex;   
+}
 .subtitle span{
+    
     color: #64ce74;
     animation-duration: 3s;
     animation-name: slidein;
@@ -329,6 +333,7 @@ width:  95%;
 .myWorks{
     width: 95vw;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     background-color: #fff;
     border-radius: 5px;
@@ -363,9 +368,13 @@ width:  95%;
 }
 #pics ,#ved{
     width:  95%;
+    margin: auto;
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
+}
+video{
+    width: 100%
 }
 .con{
     width: 95vw;
