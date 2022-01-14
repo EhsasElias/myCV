@@ -6,41 +6,50 @@ const butEl = document.querySelector('#submit');
 const form = document.querySelector('#form');
 const img = document.querySelector('#theImage');
 
+function checkEmpteyLength() {
+    document.querySelector('#usermsg').innerText = "* Field Required";
+    document.querySelector('#usermsg').style.color = "red";
+    document.querySelector('#emailmsg').innerText = "* Field Required";
+    document.querySelector('#emailmsg').style.color = "red";
+    document.querySelector('#textmsg').innerText = "* Field Required";
+    document.querySelector('#textmsg').style.color = "red";
+}
 
-form.addEventListener('submit', function (e) {
-    // prevent the form from submitting
-    e.preventDefault();
-
-    // validate fields
-    checkUsername();
-    checkEmail();
-    checkPassword();
-    checkConfirmPassword();
-    isValidMesg();
-
-});
 
 butEl.addEventListener('click', function (e) {
+    // prevent the form from submitting
     e.preventDefault();
+    if (usernameEl.value == "" || emailEl.value == "" || textareaEl == "") {
+        checkEmpteyLength();
+    }
+    else {
 
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+        // validate fields
+        checkUsername();
+        checkEmail();
+        isValidMesg();
+    }
 
 });
+
 
 
 
 function checkUsername() {
-    if (usernameEl.value.length > 3 && usernameEl.value.length < 10) {
+    if (usernameEl.value == "") {
+        document.querySelector('#usermsg').innerText = "* Field Required";
+        document.querySelector('#usermsg').style.color = "red";
+    }
+    else if (usernameEl.value.length > 3 && usernameEl.value.length < 10) {
         document.getElementById("usermsg").innerText = "Correct";
         document.getElementById("usermsg").style.color = "green";
     }
     else if (usernameEl.value.length > 10) {
-        document.getElementById("usermsg").innerText = "Your name lenght must be less than 10 charecters";
+        document.getElementById("usermsg").innerText = "Your name lenght must be less than 10 chars";
         document.getElementById("usermsg").style.color = "yellow";
     }
     else {
-        document.getElementById("usermsg").innerText = "Your name lenght must be more than 3 charecters";
+        document.getElementById("usermsg").innerText = "Your name lenght must be more than 3 chars";
         document.getElementById("usermsg").style.color = "yellow";
 
 
@@ -48,7 +57,11 @@ function checkUsername() {
 };
 
 function checkEmail() {
-    if (emailEl.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+    if (emailEl.value == "") {
+        document.querySelector('#emailmsg').innerText = "* Field Required";
+        document.querySelector('#emailmsg').style.color = "red";
+    }
+    else if (emailEl.value.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
         document.getElementById("emailmsg").innerText = "Correct";
         document.getElementById("emailmsg").style.color = "green";
 
@@ -65,8 +78,12 @@ function checkEmail() {
 
 
 function isValidMesg() {
-    if (textareaEl.value.length < 20) {
-        document.getElementById("textmsg").innerText = "Your Message Legnth Must Be More Than 20 Charecter";
+    if (textareaEl.value == "") {
+        document.querySelector('#textmsg').innerText = "* Field Required";
+        document.querySelector('#textmsg').style.color = "red";
+    }
+    else if (textareaEl.value.length < 20) {
+        document.getElementById("textmsg").innerText = "Your Message Legnth Must Be More Than 20 Chars";
         document.getElementById("textmsg").style.color = "yellow";
     }
     else {
@@ -129,7 +146,7 @@ function makeFullScreen() {
 
 }
 
-function darkMode(){
+function darkMode() {
     var element = document.body;
     var element2 = document.querySelector("ul");
     var element3 = document.querySelector("#pinfo");
@@ -154,7 +171,7 @@ function darkMode(){
 
 
 var touchtime = 0;
-document.addEventListener("click", function() {
+document.addEventListener("click", function () {
     if (touchtime == 0) {
         // set first click
         touchtime = new Date().getTime();
@@ -162,7 +179,7 @@ document.addEventListener("click", function() {
         // compare first click to this click and see if they occurred within double click threshold
         if (((new Date().getTime()) - touchtime) < 800) {
             // double click occurred
-           
+
             darkMode();
             touchtime = 0;
         } else {
