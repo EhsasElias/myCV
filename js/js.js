@@ -156,6 +156,7 @@ function darkMode() {
     var element7 = document.querySelector("#resume");
     var element8 = document.querySelector("#works");
     var element9 = document.querySelector("#contact");
+    var element10 = document.querySelector("footer");
     element.classList.toggle("dark-mode");
 
     element2.classList.toggle("dark-mode");
@@ -166,6 +167,7 @@ function darkMode() {
     element7.classList.toggle("dark-mode");
     element8.classList.toggle("dark-mode");
     element9.classList.toggle("dark-mode");
+    element10.classList.toggle("dark-mode");
 }
 
 
