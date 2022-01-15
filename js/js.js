@@ -147,7 +147,7 @@ function makeFullScreen() {
 }
 
 function darkMode() {
-    var element = document.body;
+    var element = document.querySelector("#innerContainer");
     var element2 = document.querySelector("ul");
     var element3 = document.querySelector("#pinfo");
     var element4 = document.querySelector("#downloadbut");
@@ -157,6 +157,7 @@ function darkMode() {
     var element8 = document.querySelector("#works");
     var element9 = document.querySelector("#contact");
     element.classList.toggle("dark-mode");
+
     element2.classList.toggle("dark-mode");
     element3.classList.toggle("dark-mode");
     element4.classList.toggle("dark-mode");
